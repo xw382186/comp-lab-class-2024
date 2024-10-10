@@ -1,0 +1,89 @@
+                :-) GROMACS - gmx grompp, 2023-plumed_2.9.1 (-:
+
+Executable:   /ext3/apps/gromacs/2023.0/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.0/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2024fa/students/wx2237/comp-lab-class-2024/Week5-ParallelTempering/Inputs
+Command line:
+  gmx_mpi grompp -f nvt_300.mdp -c adp.gro -p adp.top -o T300/adp.tpr
+
+Ignoring obsolete mdp entry 'ns_type'
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group System is 51.00
+
+NOTE 1 [file nvt_300.mdp]:
+  The optimal PME mesh load for parallel simulations is below 0.5
+  and for highly parallel simulations between 0.25 and 0.33,
+  for higher performance, increase the cut-off and the PME grid spacing.
+
+
+
+There was 1 NOTE
+
+GROMACS reminds you: "Somewhere, something incredible is waiting to be known." (Carl Sagan)
+
+                :-) GROMACS - gmx grompp, 2023-plumed_2.9.1 (-:
+
+Executable:   /ext3/apps/gromacs/2023.0/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.0/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2024fa/students/wx2237/comp-lab-class-2024/Week5-ParallelTempering/Inputs
+Command line:
+  gmx_mpi grompp -f nvt_400.mdp -c adp.gro -p adp.top -o T400/adp.tpr
+
+Ignoring obsolete mdp entry 'ns_type'
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group System is 51.00
+
+NOTE 1 [file nvt_400.mdp]:
+  The optimal PME mesh load for parallel simulations is below 0.5
+  and for highly parallel simulations between 0.25 and 0.33,
+  for higher performance, increase the cut-off and the PME grid spacing.
+
+
+
+There was 1 NOTE
+
+GROMACS reminds you: "Catholic School Girls Rule" (Red Hot Chili Peppers)
+
+                :-) GROMACS - gmx grompp, 2023-plumed_2.9.1 (-:
+
+Executable:   /ext3/apps/gromacs/2023.0/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.0/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2024fa/students/wx2237/comp-lab-class-2024/Week5-ParallelTempering/Inputs
+Command line:
+  gmx_mpi grompp -f nvt_600.mdp -c adp.gro -p adp.top -o T600/adp.tpr
+
+Ignoring obsolete mdp entry 'ns_type'
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group System is 51.00
+
+NOTE 1 [file nvt_600.mdp]:
+  The optimal PME mesh load for parallel simulations is below 0.5
+  and for highly parallel simulations between 0.25 and 0.33,
+  for higher performance, increase the cut-off and the PME grid spacing.
+
+
+
+There was 1 NOTE
+
+GROMACS reminds you: "You Crashed Into the Swamps" (Silicon Graphics)
+
+                 :-) GROMACS - gmx mdrun, 2023-plumed_2.9.1 (-:
+
+Executable:   /ext3/apps/gromacs/2023.0/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.0/openmpi/intel
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2024fa/students/wx2237/comp-lab-class-2024/Week5-ParallelTempering/Inputs
+Command line:
+  gmx_mpi mdrun -s adp -multidir T300/ T400/ T600/ -deffnm adp_exchange3temps -replex 500 -ntomp 1
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2023-plumed_2.9.1
+Source file: src/gromacs/mdrunutility/multisim.cpp (line 88)
+Function:    std::unique_ptr<gmx_multisim_t, std::default_delete<gmx_multisim_t>> buildMultiSimulation(ompi_communicator_t *, gmx::ArrayRef<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>)
+
+Inconsistency in user input:
+The number of ranks (1) is not a multiple of the number of simulations (3)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------

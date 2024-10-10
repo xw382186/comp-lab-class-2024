@@ -1,0 +1,49 @@
+; Run parameters
+integrator    = md            ; Leap-frog integrator
+nsteps        = 2500000       ; 5 ns (assuming a time step of 2 fs)
+dt            = 0.002         ; 2 fs
+
+; Output control
+nstxout       = 500           ; Save coordinates every 500 steps
+nstvout       = 500           ; Save velocities every 500 steps
+nstenergy     = 500           ; Save energies every 500 steps
+nstlog        = 500           ; Update the log file every 500 steps
+
+; Bond parameters
+continuation  = no            ; First dynamics run
+constraint_algorithm = lincs  ; LINCS to constrain bond lengths
+constraints   = h-bonds     ; All bonds (even heavy atom-H bonds) constrained
+lincs_iter    = 1             ; Accuracy of LINCS
+lincs_order   = 4             ; Higher order increases accuracy
+
+; Neighborsearching
+cutoff-scheme = Verlet        ; Buffered neighbor searching
+ns_type       = grid          ; Search neighboring grid cells
+nstlist       = 10            ; 10 fs, largely irrelevant with Verlet
+rcoulomb      = 1.0           ; Short-range electrostatic cutoff (in nm)
+rvdw          = 1.0           ; Short-range Van der Waals cutoff (in nm)
+
+; Electrostatics
+coulombtype   = PME           ; Particle Mesh Ewald for long-range electrostatics
+pme_order     = 4             ; Cubic interpolation
+fourierspacing= 0.16          ; Grid spacing for FFT
+
+; Temperature coupling
+tcoupl        = V-rescale     ; Modified Berendsen thermostat
+tc-grps       = System        ; Coupling group for temperature
+tau_t         = 0.1           ; Time constant for temperature coupling
+ref_t         = 400           ; Reference temperature (K)
+
+; Pressure coupling
+pcoupl        = no            ; No pressure coupling in NVT
+
+; Periodic boundary conditions
+pbc           = xyz           ; 3D PBC
+
+; Dispersion correction
+DispCorr      = EnerPres      ; Account for cut-off vdW scheme
+
+; Velocity generation
+gen_vel       = yes           ; Assign velocities from Maxwell distribution
+gen_temp      = 400           ; Temperature to generate velocities at
+gen_seed      = -1            ; Generate random seed

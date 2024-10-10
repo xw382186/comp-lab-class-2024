@@ -1,0 +1,249 @@
+                 :-) GROMACS - gmx grompp, 2021.3-MODIFIED (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2021.3-MODIFIED
+Executable:   /public/software/.local/easybuild/software/GROMACS/2021.3-foss-2021a-CUDA-11.3.1-PLUMED-2.7.2/bin/gmx_mpi
+Data prefix:  /public/software/.local/easybuild/software/GROMACS/2021.3-foss-2021a-CUDA-11.3.1-PLUMED-2.7.2
+Working dir:  /home/cloudam/Inputs
+Command line:
+  gmx_mpi grompp -f nvt_300.mdp -c adp.gro -p adp.top -o T300/adp.tpr
+
+Ignoring obsolete mdp entry 'ns_type'
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group System is 51.00
+
+NOTE 1 [file nvt_300.mdp]:
+  The optimal PME mesh load for parallel simulations is below 0.5
+  and for highly parallel simulations between 0.25 and 0.33,
+  for higher performance, increase the cut-off and the PME grid spacing.
+
+
+
+There was 1 note
+
+GROMACS reminds you: "There's a limit to how many times you can read how great you are and what an inspiration you are, but I'm not there yet." (Randy Pausch)
+
+                 :-) GROMACS - gmx grompp, 2021.3-MODIFIED (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2021.3-MODIFIED
+Executable:   /public/software/.local/easybuild/software/GROMACS/2021.3-foss-2021a-CUDA-11.3.1-PLUMED-2.7.2/bin/gmx_mpi
+Data prefix:  /public/software/.local/easybuild/software/GROMACS/2021.3-foss-2021a-CUDA-11.3.1-PLUMED-2.7.2
+Working dir:  /home/cloudam/Inputs
+Command line:
+  gmx_mpi grompp -f nvt_400.mdp -c adp.gro -p adp.top -o T400/adp.tpr
+
+Ignoring obsolete mdp entry 'ns_type'
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group System is 51.00
+
+NOTE 1 [file nvt_400.mdp]:
+  The optimal PME mesh load for parallel simulations is below 0.5
+  and for highly parallel simulations between 0.25 and 0.33,
+  for higher performance, increase the cut-off and the PME grid spacing.
+
+
+
+There was 1 note
+
+GROMACS reminds you: "Do not quench your inspiration and your imagination; do not become the slave of your model." (Vincent Van Gogh)
+
+                 :-) GROMACS - gmx grompp, 2021.3-MODIFIED (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2021.3-MODIFIED
+Executable:   /public/software/.local/easybuild/software/GROMACS/2021.3-foss-2021a-CUDA-11.3.1-PLUMED-2.7.2/bin/gmx_mpi
+Data prefix:  /public/software/.local/easybuild/software/GROMACS/2021.3-foss-2021a-CUDA-11.3.1-PLUMED-2.7.2
+Working dir:  /home/cloudam/Inputs
+Command line:
+  gmx_mpi grompp -f nvt_600.mdp -c adp.gro -p adp.top -o T600/adp.tpr
+
+Ignoring obsolete mdp entry 'ns_type'
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group System is 51.00
+
+NOTE 1 [file nvt_600.mdp]:
+  The optimal PME mesh load for parallel simulations is below 0.5
+  and for highly parallel simulations between 0.25 and 0.33,
+  for higher performance, increase the cut-off and the PME grid spacing.
+
+
+
+There was 1 note
+
+GROMACS reminds you: "There was no preconception on what to do" (Daft Punk)
+
+                  :-) GROMACS - gmx mdrun, 2021.3-MODIFIED (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2021.3-MODIFIED
+Executable:   /public/software/.local/easybuild/software/GROMACS/2021.3-foss-2021a-CUDA-11.3.1-PLUMED-2.7.2/bin/gmx_mpi
+Data prefix:  /public/software/.local/easybuild/software/GROMACS/2021.3-foss-2021a-CUDA-11.3.1-PLUMED-2.7.2
+Working dir:  /home/cloudam/Inputs
+Command line:
+  gmx_mpi mdrun -s adp -multidir T300/ T400/ T600/ -deffnm adp_exchange3temps -replex 500
+
+
+WARNING: The gmx mdrun binary does not include support for the CUDA architecture of the GPU ID #0 (compute capability 8.6) detected during detection. By default, GROMACS supports all architectures of compute capability >= 3.0, so your GPU might be rare, or some architectures were disabled in the build. 
+Consult the install guide for how to use the GMX_CUDA_TARGET_SM and GMX_CUDA_TARGET_COMPUTE CMake variables to add this architecture. 
+
+WARNING: An error occurred while sanity checking device #0. An unhandled error from a previous CUDA operation was detected. CUDA error #98 (cudaErrorInvalidDeviceFunction): invalid device function.
+
+Reading file adp.tpr, VERSION 2021.3-MODIFIED (single precision)
+Reading file adp.tpr, VERSION 2021.3-MODIFIED (single precision)
+Reading file adp.tpr, VERSION 2021.3-MODIFIED (single precision)
+Changing nstlist from 10 to 100, rlist from 1 to 1
+
+Changing nstlist from 10 to 100, rlist from 1 to 1
+
+Changing nstlist from 10 to 100, rlist from 1 to 1
+
+This is simulation 0 out of 3 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 1 out of 3 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+This is simulation 2 out of 3 running as a composite GROMACS
+multi-simulation job. Setup for this simulation:
+
+Using 1 MPI process
+Using 3 OpenMP threads 
+
+Using 3 OpenMP threads 
+
+Using 3 OpenMP threads 
+
+starting mdrun 'Protein'
+2500000 steps,   5000.0 ps.
+starting mdrun 'Protein'
+2500000 steps,   5000.0 ps.
+starting mdrun 'Protein'
+2500000 steps,   5000.0 ps.
+
+Writing final coordinates.
+
+Writing final coordinates.
+
+Writing final coordinates.
+
+GROMACS reminds you: "Time is the best appraiser of scientific work, and I am aware that an industrial discovery rarely produces all its fruit in the hands of its first inventor." (Louis Pasteur)
+
