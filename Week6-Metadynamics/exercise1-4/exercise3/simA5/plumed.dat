@@ -1,0 +1,7 @@
+MOLINFO STRUCTURE=dialaA.pdb  # 加载结构信息
+phi: TORSION ATOMS=5,7,9,15  # 计算φ二面角
+psi: TORSION ATOMS=7,9,15,17  # 计算ψ二面角
+
+# 启动元动力学（Metadynamics），使用phi角作为控制变量
+metad: METAD ARG=phi SIGMA=0.5 HEIGHT=1.2 PACE=500 FILE=HILLS BIASFACTOR=5
+PRINT ARG=phi,psi FILE=COLVAR STRIDE=10  # 每10步输出phi和psi的值
